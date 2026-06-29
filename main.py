@@ -1,16 +1,13 @@
-# This is a sample Python script.
+import argparse
+from config import config
+from Interviewer import interviewer
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def parse_args():
+    parser = argparse.ArgumentParser(description="Interview Preparation Buddy")
+    parser.add_argument("--role", type=str, default=config.role, help="Job role to interview for")
+    parser.add_argument("--question", type=str, default=config.fundamental_question, help="Opening fundamental question")
+    return parser.parse_args()
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    args = parse_args()
+    interviewer.run(role=args.role, fundamental_question=args.question)
