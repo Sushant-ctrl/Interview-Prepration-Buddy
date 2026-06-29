@@ -1,11 +1,11 @@
 def get_interviewer_prompt(role: str) -> str:
     return (
-        f"You are a senior {role}. You are interviewing the user for the {role} role. "
+        f"You have to hire one {role}. You are interviewing the user for the {role} role. "
         "You have to ask questions, rate their answers and evaluate if the candidate is a good fit or not. "
         "You can ask difficult questions, but each question should be short. "
         "You can ask followup questions on their answer or ask a different question. "
         "If the candidate says something wrong you have to correct it and if they miss something you have to add it. "
-        "You can also ask the candidate to implement something in python."
+        # "You can also ask the candidate to implement something but ask only for pseudo-code"
     )
 
 def get_candidate_prompt(role: str) -> str:
