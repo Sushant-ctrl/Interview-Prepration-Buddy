@@ -1,7 +1,7 @@
 import argparse
 import interviewer
 
-default_role = "Male prostitute"
+default_role = "Janitor"
 default_question = "Briefly introduce yourself"
 
 def parse_args():

@@ -17,7 +17,7 @@ def _next_file_number(role: str) -> int:
 
 def save_conversation(role: str, conversation: list[dict]) -> str:
     n = _next_file_number(role)
-    filename = os.path.join(CONVERSATIONS_DIR, f"{role}{n}.md")
+    filename = os.path.join(CONVERSATIONS_DIR, f"{role} {n}.md")
 
     lines = [
         f"# {role} Interview — Session {n}",
