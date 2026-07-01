@@ -2,6 +2,11 @@
 
 Simulates a job interview using two AI agents — one playing the interviewer, one playing the candidate. Conversations are saved as markdown files after each run.
 
+<div align="center">
+  <img src="demo.gif" alt="Demo"/>
+  <p><em>Live interview simulation in the Streamlit UI</em></p>
+</div>
+
 ## Setup
 
 1. Clone the repo and install dependencies:
@@ -33,3 +38,8 @@ Enter your OpenAI API key, role, and opening question in the sidebar, then click
 ## Output
 
 Each run saves a conversation to `conversations/{role}{n}.md`, where `n` increments automatically per role.
+
+<div align="center">
+  <img src="MD_File_sample.png" alt="Sample conversation file"/>
+  <p><em>Sample saved conversation transcript</em></p>
+</div>
