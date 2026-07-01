@@ -16,11 +16,19 @@ Simulates a job interview using two AI agents — one playing the interviewer, o
 
 ## Running
 
+**CLI:**
 ```bash
 python main.py --role "AI Engineer" --question "What is HNSW?"
 ```
 
 Both flags are optional and fall back to defaults in `config/config.py`.
+
+**Streamlit UI:**
+```bash
+streamlit run streamlit_app.py
+```
+
+Enter your OpenAI API key, role, and opening question in the sidebar, then click **Start Interview**. The conversation streams live in the browser and a transcript can be downloaded when complete.
 
 ## Output
 
